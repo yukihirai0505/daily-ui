@@ -13,10 +13,10 @@ interface SectionProps {
 }
 
 const Section = styled.section<SectionProps>`
-  margin: ${props => (props.margin ? props.margin : '0 auto')};
+  margin: ${({ margin }) => (margin ? margin : '0 auto')};
   text-align: center;
-  width: ${props => props.width};
-  font-size: ${props => (props.fontSize ? props.fontSize : '15px')};
+  width: ${({ width }) => width};
+  font-size: ${({ fontSize }) => (fontSize ? fontSize : '15px')};
   font-weight: 600;
 `
 
@@ -30,9 +30,9 @@ const Link = styled.a<LinkProps>`
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: ${props => (props.isBtn ? '3px' : '0')};
-  border: ${props => (props.isBtn ? '1px solid gray' : 'none')};
-  border-radius: ${props => (props.isBtn ? '2px' : '0')};
+  padding: ${({ isBtn }) => (isBtn ? '3px' : '0')};
+  border: ${({ isBtn }) => (isBtn ? '1px solid gray' : 'none')};
+  border-radius: ${({ isBtn }) => (isBtn ? '2px' : '0')};
   &:hover {
     cursor: pointer;
   }

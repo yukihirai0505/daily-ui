@@ -12,9 +12,9 @@ export const Button = styled.button<ButtonProps>`
   color: white;
   padding: 1.25em 0.5em;
   border: 2px solid black;
-  border-radius: ${props => (props.borderRadius ? props.borderRadius : '5px')};
-  margin: ${props => (props.margin ? props.margin : '10px')};
-  width: ${props => (props.width ? props.margin : '100%')};
+  border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : '5px')};
+  margin: ${({ margin }) => (margin ? margin : '10px')};
+  width: ${({ width }) => (width ? width : '100%')};
   letter-spacing: 0.1em;
   font-size: 0.75em;
   &:hover {
