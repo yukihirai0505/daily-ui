@@ -2,16 +2,11 @@ import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import SignUp from './SignUp'
 import { createGlobalStyle } from 'styled-components'
+import reset from 'styled-reset'
 import * as serviceWorker from './serviceWorker'
 
 const GlobalStyle = createGlobalStyle`
-  body {
-      background: #eddb53;
-      color: white;
-      padding: 0;
-      margin: 0;
-      font-family: cursive;
-  }
+  ${reset}
 `
 
 ReactDOM.render(
