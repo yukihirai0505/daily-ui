@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
-import SignUp from './SignUp'
+import SignUp from './components/pages/SignUp'
 import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 import * as serviceWorker from './serviceWorker'

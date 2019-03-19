@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-const Blog = styled.h1`
+const Head = styled.div`
   text-align: center;
   color: skyBlue;
 `
 
 interface ButtonProps {
-  primary: boolean
+  primary?: boolean
 }
 
-const Button = styled.button<ButtonProps>`
+const Button = styled.div<ButtonProps>`
   background: ${props => (props.primary ? 'green' : 'white')};
   color: ${props => (props.primary ? 'white' : 'green')};
   font-size: 1.5em;
@@ -23,14 +23,14 @@ const Button = styled.button<ButtonProps>`
 const SignUp: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   return (
     <div className={props.className}>
-      <Blog>AppDividend</Blog>
+      <Head>AppDividend</Head>
       <Button primary={true}>Styled</Button>
-      <Button primary={false}>Plain</Button>
+      <Button>Plain</Button>
     </div>
   )
 }
 
 export default styled(SignUp)`
-  background-color: #232020;
-  border-radius: 5px;
+  // background-color: #232020;
+  // border-radius: 5px;
 `
