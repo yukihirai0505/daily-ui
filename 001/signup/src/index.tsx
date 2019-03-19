@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 ReactDOM.render(
   <Fragment>
     <GlobalStyle />
-    <SignUp />
+    <SignUp className="container" />
   </Fragment>,
   document.getElementById('root')
 )
