@@ -8,8 +8,15 @@ const Blog = styled.h1`
 
 class App extends Component {
   render() {
-    return <Blog>AppDividend</Blog>
+    return (
+      <div className={this.props.className}>
+        <Blog>AppDividend</Blog>
+      </div>
+    )
   }
 }
 
-export default App
+export default styled(App)`
+  background-color: #232020;
+  border-radius: 5px;
+`
