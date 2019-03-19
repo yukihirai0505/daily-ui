@@ -6,7 +6,11 @@ const Blog = styled.h1`
   color: skyBlue;
 `
 
-const Button = styled.button`
+interface ButtonProps {
+  primary: boolean
+}
+
+const Button = styled.button<ButtonProps>`
   background: ${props => (props.primary ? 'green' : 'white')};
   color: ${props => (props.primary ? 'white' : 'green')};
   font-size: 1.5em;
@@ -16,19 +20,17 @@ const Button = styled.button`
   margin: 10px;
 `
 
-class App extends Component {
-  render() {
-    return (
-      <div className={this.props.className}>
-        <Blog>AppDividend</Blog>
-        <Button primary="styled">Styled</Button>
-        <Button>Plain</Button>
-      </div>
-    )
-  }
+const SignUp: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
+  return (
+    <div className={props.className}>
+      <Blog>AppDividend</Blog>
+      <Button primary={true}>Styled</Button>
+      <Button primary={false}>Plain</Button>
+    </div>
+  )
 }
 
-export default styled(App)`
+export default styled(SignUp)`
   background-color: #232020;
   border-radius: 5px;
 `

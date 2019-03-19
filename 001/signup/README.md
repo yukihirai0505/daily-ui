@@ -1,3 +1,1 @@
-## Sign Up Page
-
-Daily UI 001
+## DailyUI 001

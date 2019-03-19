@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import SignUp from './SignUp'
 import { createGlobalStyle } from 'styled-components'
 import * as serviceWorker from './serviceWorker'
 
@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 ReactDOM.render(
   <Fragment>
     <GlobalStyle />
-    <App />
+    <SignUp />
   </Fragment>,
   document.getElementById('root')
 )
