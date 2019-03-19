@@ -7,11 +7,6 @@ const FooterStyle = styled.footer`
   color: skyBlue;
 `
 
-export const Footer: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
-  return (
-    <FooterStyle>
-      <Button primary={true}>Styled</Button>
-      <Button>Plain</Button>
-    </FooterStyle>
-  )
+export const Footer: React.FC = () => {
+  return <FooterStyle>Footer</FooterStyle>
 }
