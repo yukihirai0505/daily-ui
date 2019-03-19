@@ -8,5 +8,5 @@ const FooterStyle = styled.footer`
 `
 
 export const Footer: React.FC = () => {
-  return <FooterStyle>Footer</FooterStyle>
+  return <FooterStyle />
 }

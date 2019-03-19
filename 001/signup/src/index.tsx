@@ -7,6 +7,10 @@ import * as serviceWorker from './serviceWorker'
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
+  @import url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff');
+  font-family: 'San Francisco', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 `
 
 ReactDOM.render(
